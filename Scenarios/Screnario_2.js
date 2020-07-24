@@ -4,17 +4,17 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
-const text_first = "I am a first slightly bigger screen made to test a Perfomance when two Stack navigation screens change" 
-const text_button_first = "Change to the second screen"
-const text_second  = "I am a second slightly bigger screen made to test a Perfomance when two Stack navigation screens change" 
-const text_button_second = "Change to the first screen"
+const text_first = "Activity 1"
+const text_button_first = "Change to the next screen"
+const text_second  = "Activity 2"
+const text_button_second = "Change to previous screen"
 
 const Stack = createStackNavigator();
 
 const Screen_one = (navigation) => {
     console.log("Navigation: ", navigation.navigation)
     return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', }}>
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
           <Text style={{textAlign: 'center'}}>{text_first}</Text>
           <Button title={text_button_first}
           onPress={

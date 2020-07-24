@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 
-const text = " I am a small screen made to test a Perfomance when the big ol' drawer bar is opening"
+const text = " "
 
 function HomeScreen({ navigation }) {
   return (

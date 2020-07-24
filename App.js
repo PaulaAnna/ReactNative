@@ -8,12 +8,12 @@ const Stack = createStackNavigator();
 
 function Next_testcase_button (navigation, next_screen_name) {
   return (
-      <View style={{width: '100%', backgroundColor: 'red'}}>
+      <SafeAreaView style={{width: '100%', backgroundColor: 'blue'}}>
           <Button title='Next testcase' 
           onPress ={
             () => navigation.navigate(next_screen_name)
           }/>  
-      </View>
+      </SafeAreaView>
   )
 }
 

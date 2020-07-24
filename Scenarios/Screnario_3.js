@@ -34,7 +34,7 @@ export default Scenario_3 = (navigation) => {
             renderItem={({item}) => {
                 return (
                     <View style={{flex:1, alignItems: 'center', marginVertical: '1%', marginHorizontal: '1%'}}>
-                        <Text adjustsFontSizeToFit numberOfLines={1} style={{fontSize: 20}}>{item.person}</Text>
+                        <Text adjustsFontSizeToFit numberOfLines={1} style={{fontSize: 18}}>{item.person}</Text>
                     </View>
                 )
             }}
