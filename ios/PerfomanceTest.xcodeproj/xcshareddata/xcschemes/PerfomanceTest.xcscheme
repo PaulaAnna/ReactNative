@@ -38,6 +38,26 @@
                ReferencedContainer = "container:PerfomanceTest.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DF5BB3A124CB35F50030FF61"
+               BuildableName = "UITests.xctest"
+               BlueprintName = "UITests"
+               ReferencedContainer = "container:PerfomanceTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DF036BAB253470B500B6D4C8"
+               BuildableName = "PerfTestMa.xctest"
+               BlueprintName = "PerfTestMa"
+               ReferencedContainer = "container:PerfomanceTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

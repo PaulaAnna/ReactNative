@@ -20,6 +20,7 @@
 		84983B810DE610AC60510605 /* libPods-PerfomanceTest-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D00AA9891A6132F16045BA3C /* libPods-PerfomanceTest-tvOS.a */; };
 		B0B01251DBC6611270A96960 /* libPods-PerfomanceTest-PerfomanceTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35549CD40436702248C60FB4 /* libPods-PerfomanceTest-PerfomanceTestTests.a */; };
 		D88CAB8BC0036B58C6B266CF /* libPods-PerfomanceTest-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D504FB2FD26A774587A2698B /* libPods-PerfomanceTest-tvOSTests.a */; };
+		DF5BB3A524CB35F50030FF61 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BB3A424CB35F50030FF61 /* UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "PerfomanceTest-tvOS";
+		};
+		DF5BB3A724CB35F50030FF61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = PerfomanceTest;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -63,6 +71,9 @@
 		BF84967248A4EE39463F133E /* Pods-PerfomanceTest-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfomanceTest-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PerfomanceTest-tvOS/Pods-PerfomanceTest-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AA9891A6132F16045BA3C /* libPods-PerfomanceTest-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PerfomanceTest-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D504FB2FD26A774587A2698B /* libPods-PerfomanceTest-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PerfomanceTest-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5BB3A224CB35F50030FF61 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5BB3A424CB35F50030FF61 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		DF5BB3A624CB35F50030FF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EEA9CD99811D5ECF03A9D161 /* Pods-PerfomanceTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfomanceTest.release.xcconfig"; path = "Target Support Files/Pods-PerfomanceTest/Pods-PerfomanceTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +110,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D88CAB8BC0036B58C6B266CF /* libPods-PerfomanceTest-tvOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5BB39F24CB35F50030FF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +180,7 @@
 				13B07FAE1A68108700A75B9A /* PerfomanceTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* PerfomanceTestTests */,
+				DF5BB3A324CB35F50030FF61 /* UITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F952A6A9A5BD828918093289 /* Pods */,
@@ -178,8 +197,18 @@
 				00E356EE1AD99517003FC87E /* PerfomanceTestTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* PerfomanceTest-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* PerfomanceTest-tvOSTests.xctest */,
+				DF5BB3A224CB35F50030FF61 /* UITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DF5BB3A324CB35F50030FF61 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF5BB3A424CB35F50030FF61 /* UITests.swift */,
+				DF5BB3A624CB35F50030FF61 /* Info.plist */,
+			);
+			path = UITests;
 			sourceTree = "<group>";
 		};
 		F952A6A9A5BD828918093289 /* Pods */ = {
@@ -278,12 +307,31 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* PerfomanceTest-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DF5BB3A124CB35F50030FF61 /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF5BB3AB24CB35F50030FF61 /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				DF5BB39E24CB35F50030FF61 /* Sources */,
+				DF5BB39F24CB35F50030FF61 /* Frameworks */,
+				DF5BB3A024CB35F50030FF61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF5BB3A824CB35F50030FF61 /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = DF5BB3A224CB35F50030FF61 /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -302,6 +350,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					DF5BB3A124CB35F50030FF61 = {
+						CreatedOnToolsVersion = 11.5;
+						DevelopmentTeam = HWZFSH8K79;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 				};
 			};
@@ -322,6 +376,7 @@
 				00E356ED1AD99517003FC87E /* PerfomanceTestTests */,
 				2D02E47A1E0B4A5D006451C7 /* PerfomanceTest-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* PerfomanceTest-tvOSTests */,
+				DF5BB3A124CB35F50030FF61 /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -352,6 +407,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5BB3A024CB35F50030FF61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -552,6 +614,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF5BB39E24CB35F50030FF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5BB3A524CB35F50030FF61 /* UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -564,6 +634,11 @@
 			isa = PBXTargetDependency;
 			target = 2D02E47A1E0B4A5D006451C7 /* PerfomanceTest-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+		DF5BB3A824CB35F50030FF61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* PerfomanceTest */;
+			targetProxy = DF5BB3A724CB35F50030FF61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -643,7 +718,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paula;
 				PRODUCT_NAME = PerfomanceTest;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -666,7 +741,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paula;
 				PRODUCT_NAME = PerfomanceTest;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -896,6 +971,63 @@
 			};
 			name = Release;
 		};
+		DF5BB3A924CB35F50030FF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HWZFSH8K79;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paula.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PerfomanceTest;
+			};
+			name = Debug;
+		};
+		DF5BB3AA24CB35F50030FF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HWZFSH8K79;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paula.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PerfomanceTest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -940,6 +1072,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF5BB3AB24CB35F50030FF61 /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF5BB3A924CB35F50030FF61 /* Debug */,
+				DF5BB3AA24CB35F50030FF61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
